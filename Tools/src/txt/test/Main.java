@@ -1,9 +1,7 @@
 package txt.test;
 import java.io.File;
-import java.io.IOException;
 
 import txt.CharSetTransfer;
-import txt.NovelCutter;
 
 
 public class Main

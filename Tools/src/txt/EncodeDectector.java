@@ -4,7 +4,6 @@ package txt;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.charset.Charset;
 
 import info.monitorenter.cpdetector.io.*;
 
