@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/搜狗高速下载/cpdetector_1.0.10_binary/cpdetector_1.0.10.jar"/>
+	<classpathentry kind="lib" path="D:/搜狗高速下载/cpdetector_1.0.10_binary/ext/antlr-2.7.4.jar"/>
+	<classpathentry kind="lib" path="D:/搜狗高速下载/cpdetector_1.0.10_binary/ext/chardet-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/搜狗高速下载/cpdetector_1.0.10_binary/ext/jargs-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/javafx-sdk-13.0.2/lib/javafx.graphics.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/javafx-sdk-13.0.2/lib/javafx.media.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/javafx-sdk-13.0.2/lib/javafx.swing.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/javafx-sdk-13.0.2/lib/javafx.web.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/javafx-sdk-13.0.2/lib/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AtCraft/OneDrive/Documents/workspace/Java/Lib/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
