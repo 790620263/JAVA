@@ -3,6 +3,8 @@ package file;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 
@@ -34,22 +36,23 @@ public class Scaner {
 	}
 	
 	/**
-	 * 在dir目录下查找文件名含有name的文件，返回文件路径
+	 * 在dir目录下查找文件名匹配regex的文件，返回文件路径
 	 * @param dir
-	 * @param name
+	 * @param regex
 	 * @return 文件路径
 	 * @throws FileNotFoundException
 	 */
-	public static String getSingleFileByNameInDir(File dir,String name) throws FileNotFoundException
+	
+	public static String getSingleFileByNameInDir(File dir,String regex) throws FileNotFoundException
 	{
 		for(File tmp:dir.listFiles())
 		{
 			if(tmp.isDirectory())
 			{
-				return getSingleFileByNameInDir(tmp,name);
+				return getSingleFileByNameInDir(tmp,regex);
 			}
 			else {
-				if(tmp.getName().contains(name))
+				if(Pattern.matches(regex, tmp.getName()))
 				{
 					return tmp.getAbsolutePath();
 				}
