@@ -1,39 +1,48 @@
 package com.atcraft.NovelWebAccessor;
-
-import java.io.IOException;
-
-import com.atcraft.NovelWebAccessor.web.BookDownloadTask;
+import java.util.ArrayList;
 
 /**
- * Hello world!
- *
- */
+ * 
+ *https://www.cnoz.org/0_1/
+ *https://www.biduo.cc/biquge/53_53835/
+ **/
 public class App 
 {
-    public static void main(String[] args)
+	protected static String configPath;
+    static ArrayList<String> toDownload;
+	
+	public static void main(String[] args)
     {
-    	dl();
+			toDownload=new ArrayList<String>();
+//			toDownload.add("http://www.biquge.tv/10_10711/");//
+//			toDownload.add("http://www.biquge.tv/34_34762/");
+//			toDownload.add("https://www.cnoz.org/0_1/");
+			toDownload.add("https://www.biduo.cc/biquge/53_53835/");
+			
+			
+			
+			BookManager m=new BookManager(toDownload);
+	    	m.updateBooks();
+    	
     }
-    /**
-     * 更新我的书籍
-     */
-    static void dl()
-    {
-		try
-		{
-			//揭棺起驾，诡秘之主
-			String[] myBooks= {"https://www.biduo.cc/biquge/53_53835/"
-					,"https://www.cnoz.org/0_1/"
-			};
-			for(String str:myBooks)
-			{
-				BookDownloadTask task=new BookDownloadTask(str);
-//				task.multi_download_since(task.url,1);
-				task.multi_download_since_last();
-			}
-		} catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-    }
+   
+//	static void loadConfig() throws FileNotFoundException
+//	{
+//		configPath=System.getProperty("java.class.path").split(";")[0]+File.separator+"config.ini";
+//		System.out.println("ConfigPath="+configPath);
+//		toDownload=new ArrayList<String>();
+//		BufferedReader r=new BufferedReader(new FileReader(configPath));
+//		String str;
+//		try
+//		{
+//			while((str =r.readLine())!=null)
+//			{
+//				toDownload.add(str);
+//			}
+//		} catch (IOException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
+//	}
 }

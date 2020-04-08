@@ -5,16 +5,11 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.EOFException;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.junit.Test;
-
-import file.ObjByteTransformer;
 import info.monitorenter.cpdetector.io.*;
 
 public class EncodeDectector
@@ -60,6 +55,8 @@ public class EncodeDectector
 			br.append(reader.readLine());
 			br.append(reader.readLine());
 			br.append(reader.readLine());
+			
+			reader.close();
 		}catch(EOFException e)
 		{
 //			e.printStackTrace();

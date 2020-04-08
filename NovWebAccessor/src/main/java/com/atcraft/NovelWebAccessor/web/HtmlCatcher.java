@@ -29,6 +29,7 @@ public class HtmlCatcher
 		header.put("Accept-Charset", "  GB2312,utf-8;q=0.7,*;q=0.7");
 		header.put("Connection", "keep-alive");
 		
+		
 		return header;
 	}
 	
